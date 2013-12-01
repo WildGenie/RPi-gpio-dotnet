@@ -4,7 +4,8 @@ Lets you access the Raspberry Pi's hardware pins in an easy and intuitive way by
 
 This library aims to fully implement the general-purpose input/output, short GPIO, interface hardware capabilities of the Raspberry Pi in a pure object-oriented approach. Additionally it provides commonly-required functionality around them. Nonetheless the footprint is kept as low as possible.
 
-It strives for full testability and therefore making the library fit for today's quality standards and simple for future extensions. That shortens the development cycle and makes you more productive instead of struggling with low-level issues. Every hardware-related interface implementation also offers a fake implementation for unit testing and integration testing purposes. Thus bugs are detected in the early stage of your application and remote debugging will be something from the past.  
+It strives for full testability and therefore making the library fit for today's quality standards and simple for future extensions. That shortens the development cycle and makes you more productive instead of struggling with low-level issues. You can confidently focus on your core-business.  
+Every hardware-related interface implementation also offers a fake implementation for unit testing and integration testing purposes. Thus bugs are detected in the early stage of your application and remote debugging will be something from the past.  
 Hardware development has not ever been more fun!
 
 
