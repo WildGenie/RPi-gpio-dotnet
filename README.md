@@ -1,6 +1,8 @@
-rpi-gpio
+Raspberry Pi GPIO .NET Library
 ========
-Lets you access the Raspberry Pi's hardware pins in an easy and intuitive way. It strives for full testability of the code base and therefore making the library fit for today's quality standards and simple for future extensions. That shortens the development cycle and makes you more productive instead of struggling with low-level issues. Every functionality provides a fake implementation for testing purposes. Thus bugs are detected in the early stage of your application and remote debugging will be something from the past. Hardware development has not ever been more fun!
+Lets you access the Raspberry Pi's hardware pins in an easy and intuitive way with high-level object-oriented .NET languages such as C#, VB.NET and others.
+
+This library aims to fully implement the general-purpose input/output, short GPIO, interface hardware capabilities of the Raspberry Pi and additionally provide commonly-required functionality around them. Nonetheless the footprint is kept as low as possible. It strives for full testability and therefore making the library fit for today's quality standards and simple for future extensions. That shortens the development cycle and makes you more productive instead of struggling with low-level issues. Every functionality also offers a fake implementation for unit testing and integration testing purposes. Thus bugs are detected in the early stage of your application and remote debugging will be something from the past. Hardware development has not ever been more fun!
 
 
 Features
@@ -12,6 +14,7 @@ Features
     * for rising and falling edge detection (synchronously and asynchronously)
     * for 'low' and 'high' level detection
     * with pull-up/down resistors
+* Switch input/output configuration of pins at runtime
 * Setting state of output pins (through direct memory access)
     * manually
     * toggling - on-off time, clock with on-off pattern
@@ -33,3 +36,18 @@ Future Extensions
 * UART interface
 * I2C interface
 * PCM output
+
+
+Prerequisites
+-------------
+* .NET 4 framework installed on your development computer
+* Microsoft Test (MSTest) - is intended to be migrated to NUnit soon to support Mac/Linux developers
+* Raspberry Pi (only for hardware tests)
+    * Installed Mono for .NET 4 framework - depends on running OS
+    * LED with resistor - for testing output pins
+    * switch with 10kOhm resistor (pull-up or -down depending on if closed is 'low' or 'high' level) - for testing input pins
+
+
+Usage
+-----
+__TODO__
