@@ -1,6 +1,6 @@
 Raspberry Pi GPIO Pure .NET Library
 ==============================
-Lets you access the Raspberry Pi's hardware pins in an easy and intuitive way by means of pure high-level object-oriented .NET languages such as C#, VB.NET and others without any dependencies to native libraries written in C or Assembly.
+Lets you access the Raspberry Pi's hardware pins in an easy and intuitive way taking advantage of pure object-oriented .NET languages such as C#, VB.NET and others without any dependencies to native libraries written in C or Assembly.
 
 This library aims to fully implement the general-purpose input/output, short GPIO, interface hardware capabilities of the Raspberry Pi in a pure object-oriented approach. Additionally it provides commonly-required functionality around them. Nonetheless the footprint is kept as low as possible.
 
