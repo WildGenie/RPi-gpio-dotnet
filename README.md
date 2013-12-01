@@ -1,8 +1,11 @@
-Raspberry Pi GPIO .NET Library
-========
-Lets you access the Raspberry Pi's hardware pins in an easy and intuitive way with high-level object-oriented .NET languages such as C#, VB.NET and others.
+Raspberry Pi GPIO Pure .NET Library
+==============================
+Lets you access the Raspberry Pi's hardware pins in an easy and intuitive way by means of pure high-level object-oriented .NET languages such as C#, VB.NET and others without any dependencies to native libraries written in C or Assembly.
 
-This library aims to fully implement the general-purpose input/output, short GPIO, interface hardware capabilities of the Raspberry Pi and additionally provide commonly-required functionality around them. Nonetheless the footprint is kept as low as possible. It strives for full testability and therefore making the library fit for today's quality standards and simple for future extensions. That shortens the development cycle and makes you more productive instead of struggling with low-level issues. Every functionality also offers a fake implementation for unit testing and integration testing purposes. Thus bugs are detected in the early stage of your application and remote debugging will be something from the past. Hardware development has not ever been more fun!
+This library aims to fully implement the general-purpose input/output, short GPIO, interface hardware capabilities of the Raspberry Pi in a pure object-oriented approach. Additionally it provides commonly-required functionality around them. Nonetheless the footprint is kept as low as possible.
+
+It strives for full testability and therefore making the library fit for today's quality standards and simple for future extensions. That shortens the development cycle and makes you more productive instead of struggling with low-level issues. Every functionality also offers a fake implementation for unit testing and integration testing purposes. Thus bugs are detected in the early stage of your application and remote debugging will be something from the past.  
+Hardware development has not ever been more fun!
 
 
 Features
@@ -15,7 +18,7 @@ Features
     * for 'low' and 'high' level detection
     * with pull-up/down resistors
 * Switch input/output configuration of pins at runtime
-* Setting state of output pins (through direct memory access)
+* Setting state of output pins
     * manually
     * toggling - on-off time, clock with on-off pattern
 * Reading state of input pins
@@ -25,11 +28,13 @@ Features
     * manually
     * automatically by polling
 
+__Note:__ Access to hardware is done through fast direct memory access.
+
 
 Future Extensions
 -----------------
 * Getting notified about state changes of input pins
-    * through an interrupt
+    * through an interrupt (access over file system)
     * by polling
 * Pulse-width modulation output
 * SPI interface
